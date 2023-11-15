@@ -1,6 +1,6 @@
 import React from 'react';
 import { Doughnut } from 'react-chartjs-2';
-import { Box, Heading } from '@chakra-ui/react';
+import { Box, Text } from '@chakra-ui/react';
 
 const RegionChart = ({ data }) => {
   
@@ -42,9 +42,9 @@ const RegionChart = ({ data }) => {
 
   return (
     <Box>
-      <Heading as="h2" mb={4}>
+      <Text  mb={4}>
         Region Distribution
-      </Heading>
+      </Text>
       <Doughnut data={chartData} />
     </Box>
   );

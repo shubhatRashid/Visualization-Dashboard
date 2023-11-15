@@ -1,6 +1,6 @@
 import React from 'react';
 import { PolarArea } from 'react-chartjs-2';
-import { Box, Heading } from '@chakra-ui/react';
+import { Box, Text } from '@chakra-ui/react';
 
 const TopicsPolarAreaChart = ({ data }) => {
   const topics = data.map(item => item.topic);
@@ -41,9 +41,9 @@ const TopicsPolarAreaChart = ({ data }) => {
 
   return (
     <Box>
-      <Heading as="h2" mb={4}>
+      <Text as="h2" mb={4}>
         Topics Chart
-      </Heading>
+      </Text>
       <PolarArea data={chartData} options={chartOptions} />
     </Box>
   );

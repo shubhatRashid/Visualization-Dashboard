@@ -1,7 +1,7 @@
 import React from 'react';
 import { Bar } from 'react-chartjs-2';
 import ChartDataLabels from 'chartjs-plugin-datalabels';
-import { Heading } from '@chakra-ui/react';
+import { Text } from '@chakra-ui/react';
 
 const IntensityChart = ({ data }) => {
   const intensityData = data.map(item => item.intensity);
@@ -114,8 +114,9 @@ const IntensityChart = ({ data }) => {
   };
 
   return (
-    <div style={{ width:"50%", margin: '50px', padding:"10px", fontFamily: 'Arial, sans-serif',  borderRadius: '8px', boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)' }}>
-      <Heading as="h3" mb={4}>Intensity Chart</Heading>
+    <div
+      className='w-[40%] border rounded-xl '>
+      <Text as="p" m={6} mb={10}>Intensity Chart</Text>
       <Bar data={chartData} options={chartOptions} plugins={[ChartDataLabels]} />
     </div>
   );

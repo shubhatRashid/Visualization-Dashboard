@@ -46,7 +46,7 @@ const AdminDashboard = () => {
         icon={<ChevronRightIcon />}
         onClick={onOpen}
         position="fixed"
-        top="50%"
+        top="15%"
         left={0}
         transform="translateY(-50%)"
         zIndex={1}

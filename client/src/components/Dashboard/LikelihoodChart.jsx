@@ -1,6 +1,6 @@
 import React from "react";
 import { Radar } from "react-chartjs-2";
-import { Box, useColorModeValue, Heading } from "@chakra-ui/react";
+import { Box, useColorModeValue, Text } from "@chakra-ui/react";
 
 const LikelihoodRadarChart = ({ data }) => {
   const chartData = {
@@ -52,9 +52,9 @@ const LikelihoodRadarChart = ({ data }) => {
       maxHeight={700} 
       overflow="hidden" 
     >
-      <Heading as="h2" mb={4} ml={6}>
+      <Text as="h2" mb={4} ml={6}>
         Likelihood Chart
-      </Heading>
+      </Text>
 
       <Radar data={chartData} options={chartOptions} />
     </Box>

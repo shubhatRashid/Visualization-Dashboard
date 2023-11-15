@@ -1,6 +1,6 @@
 import React from "react";
 import { Pie } from "react-chartjs-2";
-import { Box, Heading, useColorModeValue } from "@chakra-ui/react";
+import { Box, Text, useColorModeValue } from "@chakra-ui/react";
 
 const PieChart = ({ data }) => {
   const sectors = {};
@@ -60,9 +60,9 @@ const PieChart = ({ data }) => {
       maxHeight={700}
       overflow="hidden"
     >
-      <Heading as="h2" mb={4}>
+      <Text as="h2" mb={4}>
         Sector Chart
-      </Heading>
+      </Text>
 
       <Pie data={chartData} options={chartOptions} />
     </Box>
